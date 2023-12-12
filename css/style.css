@@ -1,0 +1,254 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* .body-container{
+  margin: 10px;
+} */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container{
+    display: flex;
+    background-color: lightgrey;
+    margin: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.illustration_img{
+    max-width: 400px;
+   
+}
+
+.get-started-poll{
+ max-width: 350px;
+}
+.search-box{
+  padding-left: 30px;
+  max-width: 450px;
+  margin: 10px 0;
+}
+.poll-card-link{
+  text-decoration: none;
+  display: block;
+}
+
+
+/* navbar */
+#navbar{
+  /* font-size:18px; */
+ background-color:#0d6efd;
+ list-style-type: none;
+ margin:  0px 0px 0px 0px;
+ 
+
+ /* padding-top: 5px; */
+ width: 20%;
+ position: fixed;
+ height: 100%;
+ overflow: auto;
+ 
+}
+
+#navbar li a {
+ display: block;
+ color:white;
+ padding: 5px 5px 5px 10px ;
+ text-decoration: none;
+}
+.offcanvas{
+  background-color:#0d6efd;
+  color:white;
+}
+.nav_titles{
+  /* font-size: 18px; */
+  padding: 10px;
+ color: rgb(226, 224, 224);
+}
+.nav_links a{
+   font-weight: 600;
+  color:white;
+  text-decoration: none;
+  padding:5px;
+  /* font-size: 14px; */
+}
+#menu{
+  background-color: #0d6efd;
+}
+.body-container{
+  padding: 10px;
+  margin-left:20%;
+  width:80%;
+  height:1000px;
+
+}
+
+/*stepper*/
+
+.stepper-wrapper {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  .stepper-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    /* color: white; */
+  
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+  
+  .stepper-item::before {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 100%;
+    top: 20px;
+    left: -50%;
+    z-index: 2;
+  }
+  
+  .stepper-item::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid white;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 2;
+  }
+  
+  .stepper-item .step-counter {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: white;
+    margin-bottom: 6px;
+  }
+  
+  .step-counter.active {
+    font-weight: bold;
+    border: 2px solid #0d6efd;
+  }
+  
+  .stepper-item.completed .step-counter {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .stepper-item.completed::after {
+    position: absolute;
+    content: "";
+    border-bottom: 2px solid #0d6efd;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    z-index: 3;
+  }
+  
+  .stepper-item:first-child::before {
+    content: none;
+  }
+  .stepper-item:last-child::after {
+    content: none;
+  }
+
+
+  .add_candidate_form{
+    display: flex;
+    flex-direction: row;
+  }
+  .add_candidate_form .entry-cand-input{
+   max-width: 300px;
+   margin: 0 10px 0 0;
+  }
+
+
+  .no_row_data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .register_link,.voting_link{
+    background-color: #f1f1f1;
+    display: inline-block;
+    padding: 10px;
+    margin:5px 0;
+    border-radius: 5px;
+  }
+  .copy_btn{
+    cursor: pointer;
+    background-color: #c0b8b8;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .card_register_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .blue_board{
+    background-color: #0d6efd;
+    width:100%;
+    height: 100%;
+    padding: 10px;
+  }
+  .poll_card_content{
+    background-color: #f1f1f1;
+    padding: 10px;
+
+  }
+  .reg_poll_card{
+    max-width: 350px;
+    border-radius: 10px;
+  }
+
+  .delete_cand{
+    cursor: pointer;
+  }
+
+
+  @media screen and (max-width: 1050px){
+    #navbar{
+        display: none;
+    }
+    .body-container{
+        margin-left: 20px;
+    }
+    }
+
+
+@media screen and (max-width: 710px){
+   .form-container{
+    flex-direction: column;
+   }
+   .illustration_img{
+    max-width: 200px;
+   
+}
+.get-started-poll img{
+   max-width: 200px;
+}
+
+}
+
+
+
