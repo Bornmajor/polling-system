@@ -8,5 +8,5 @@ die("ERROR: Could not connect DB."
 ob_start(); 
 if(session_status() !== PHP_SESSION_ACTIVE) session_start();
 
-error_reporting(0); 
+//error_reporting(0); 
 ?>
