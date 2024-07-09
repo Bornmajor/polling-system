@@ -1,5 +1,5 @@
 # Polling system
-Web based application that allows user to create a dynamic platform for polling.
+This web-based application enables users to create interactive and dynamic polling platforms. Users can set up polls by adding various candidates or options, allowing participants to cast their votes. The system then collects and analyzes the votes, providing insightful analytics and ranking the candidates based on the collected data. This platform is ideal for conducting surveys, elections, and opinion polls, offering real-time results and detailed insights to enhance decision-making processes.
 
 ## Features
 1. User can create an online poll
